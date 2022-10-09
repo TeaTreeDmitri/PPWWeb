@@ -1,0 +1,87 @@
+/* imports */
+@import url("https://use.typekit.net/obi0jwa.css");
+
+
+/* CSS customer props */
+
+:root {
+    /* colours */
+    --blue: #323F8E;
+    --white: #FFF;
+    --black: #000;
+
+    /* fonts */
+    --BoldFont: font-family: paralucent, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+
+    --HeavyFont: font-family: paralucent, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+    --condensedFont: font-family: paralucent-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    --condensedHeavyFont:font-family: paralucent-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    --bodyFont: font-family: paralucent-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* global styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+h1 {
+    /* font-family: var(--BoldFont); */
+}
+
+h2 {
+    /* font-family: var(--BoldFont); */
+
+}
+
+h3 {
+    font-family: paralucent;
+
+}
+
+/* landing area */
+/* layout */
+#landing {
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    place-content: center;
+}
+
+#poster {
+    height: 100vh;
+    width: 61.6%;
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 38.2% 1fr 14.5%;
+    grid-template-rows: 12.5% 12.5% 25% 16.5% 16.5% 1fr; 
+}
+
+#poster * {
+    border: solid red 1px;
+}
+
+#subtitle {
+    grid-column: 2 / 3;
+}
+
+#heroImg {
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+}
