@@ -84,6 +84,11 @@ p.desc {
   text-transform: none;
 }
 
+a {
+  text-decoration: none;
+  display: block;
+}
+
 .borderRight {
   height: 100%;
   width: 100%;
@@ -106,10 +111,10 @@ p.desc {
   position: fixed;
   background-color: #fff;
   column-gap: 2rem;
+  box-shadow: #fff 2px 22px 2px;
 }
 
 .nav a {
-  text-decoration: none;
   font-family: var(--HeavyFont);
   color: var(--blue);
 }
@@ -209,6 +214,7 @@ p.desc {
 
 #aboutMe {
   max-width: 70ch;
+  text-align: center;
   text-transform: none;
 }
 
@@ -239,13 +245,10 @@ p.desc {
 }
 
 .projectWindow {
+  grid-template-columns: 1fr 1fr;
   height: 80%;
   max-width: 100%;
-  grid-template-columns: 1fr 1fr;
   aspect-ratio: 16 / 9;
-}
-
-.projectWindow {
   cursor: url(assets/pointerBlue2.png), auto;
 }
 
