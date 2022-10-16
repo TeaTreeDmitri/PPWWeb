@@ -30,6 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: uppercase;
+  scroll-behavior:smooth;
 }
 
 .hidden {
@@ -37,7 +38,7 @@
 }
 
 .pointer:hover {
-  cursor: url('assets/pointerBlue.png');
+  cursor: url('assets/pointerBlue.png'), auto;
 }
 
 body {
@@ -49,31 +50,28 @@ h2,
 h3,
 p {
   color: var(--blue);
+  font-family: var(--HeavyFont);
 }
 
 h1 {
-  font-family: var(--HeavyFont);
   font-weight: 900;
   font-size: 6rem;
   line-height: 80%;
 }
 
 h2 {
-  font-family: var(--HeavyFont);
   font-weight: 900;
   font-size: 3rem;
   line-height: 75%; /* font-family: var(--BoldFont); */
 }
 
 h3 {
-  font-family: var(--HeavyFont);
   font-weight: 400;
   line-height: 90%;
   font-size: 1.5rem;
 }
 
 p {
-  font-family: var(--HeavyFont);
   font-weight: 400;
 }
 
@@ -87,6 +85,11 @@ p.desc {
 a {
   text-decoration: none;
   display: block;
+  font-family: var(--HeavyFont);
+}
+
+a:hover {
+  cursor: url('assets/pointerBlue.png'), auto;
 }
 
 .borderRight {
@@ -253,7 +256,7 @@ a {
 }
 
 .projectDesc {
-  height: 61.8%;
+  height: fit-content;
   width: 100%;
   padding: 4%;
   background-color: var(--blue);
@@ -264,7 +267,11 @@ a {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  border: red 3px dashed;
+
+}
+
+.projectSlides img {
+  max-width: 100%;
 }
 
 #projectList .projectPreview:nth-child(odd) {
@@ -350,6 +357,20 @@ a {
 
 /*  Contact Me Section*/
 
+footer {
+  width: 100vw;
+  background-color: var(--blue);
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer a {
+  color: var(--white);
+}
+
 /* Animation section */
 
 .reveal {
@@ -366,5 +387,108 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+
+
+/* SUB PAGES */
+
+.subLanding {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subLanding div {
+  width: 50vw;
+  text-align: right;
+}
+
+
+.subLanding img {
+  width: 10vw;
+  margin-right: auto;
+  position: fixed;
+  right: 20%;
+  top: 43%;
+  z-index: -1;
+}
+
+.subFurther {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: fit-content;
+}
+
+.subContent {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  row-gap: 3rem;
+}
+
+.mockUpCont {
+  width: 50vw;
+  background-color: var(--blue);
+  padding-top: 5rem;
+}
+
+.mockUpCont img {
+  max-width: 80%;
+  margin-left: 5vw;
+}
+
+#responsiveCont {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+#responsiveCont :nth-child(2) {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 650px) {
+  #poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  #poster * {
+    margin: 0;
+  }
+
+  #heroImg {
+    height: 50vh;
+  }
+
+  #intro {
+    margin-top: 7rem;
+  }
+
+  #phonePic1 {
+    width: 80vw;
+  }
+
+  #projectList div {  
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .projectWindow {
+    display: grid;
   }
 }

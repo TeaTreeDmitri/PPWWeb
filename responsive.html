@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Design</title>
+</head>
+
+<body>
+    <div class="nav"><a href="index.html">Home</a><a href="#contact">Contact</a></div>
+
+    <div class="subLanding">
+        <div>
+            <h1>Responsive Design</h1>
+        </div>
+        <div><img src="/assets/pointer.svg" alt="a pointer"></div>
+    </div>
+    <div class="subFurther">
+        <div class="subContent">
+            <h3>Stay Flexy</h3>
+            <p>
+                For the most part, using responsive values such as max or min took care of the responsively of the layout between large and medium desktop sizes. 
+
+however the design did break around 650px so a single media query was used. The function of this media query was MAINLY to switch from display:grid layouts to display: flex layouts. As when a layout is adapted for mobile it is primarily a single column layout, something flex is very good at.
+
+The flex- direction was also changed so that they stack vertically in a single column as opposed to flex-direction: row when they’d be side by side.
+
+The advantage of this approach is that the layouts WITHIN components are preserved, so often only the containers need adapting.
+
+See below for examples: </p>
+<div id="responsiveCont">
+            <img src="assets/responsiveHeaderDeskt.png" alt="a screengrab of the desktop layout">
+            <img src="assets/responsiveHeaderMobile.png" alt="a screengrab of the mobile layout">
+        </div>
+            <a href="NOTSUREYET">Link to project</a>
+        </div>
+        <div class="mockUpCont">
+            <img src="/assets/responsiveDesignMockupDesk.png" class="mockUp"
+                alt="a mock up of Fonts and UI Components project">
+        </div>
+    </div>
+    <footer>
+        <div class="footItem"><a href="fonts.html">Fonts and UI Components</a></div>
+        <div class="footItem"><a href="frameworks.html">Designing with Frameworks</a></div>
+        <div class="footItem"><a href="responsive.html">Back to Top</a></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

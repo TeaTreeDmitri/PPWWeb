@@ -29,7 +29,6 @@ function openProjectWindow(event) {
 
     window.classList.add("reveal");
     window.classList.remove("hidden");
-    window.addEventListener("click", openLink);
 
     projectView.addEventListener("click", closeProjectWindow);
 }
@@ -39,8 +38,4 @@ function closeProjectWindow(project) {
     window.classList.remove("reveal");
     window.classList.add("hidden");
 
-}
-
-function openLink() {
-    console.log("take me to the portfolio section plz")
 }
