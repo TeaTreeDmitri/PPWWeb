@@ -460,8 +460,9 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    max-width: 90vw;
+    margin-top: 1vh;
+    margin-left: 1px;
   }
 
   #poster * {
@@ -474,7 +475,8 @@ footer a {
 
   #intro {
     margin-top: 7rem;
-  }
+    margin-left: 5vw;
+    }
 
   #phonePic1 {
     width: 80vw;
@@ -483,12 +485,17 @@ footer a {
   #projectList div {  
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     max-width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 5vw;
   }
 
   .projectWindow {
     display: grid;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 50vh;
   }
 }
