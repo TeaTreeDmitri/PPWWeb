@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="nav"><a href="index.html">Home</a><a href="index.html">Contact</a></div>
+<body >
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="#projectList">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
     <!-- landing section -->
     <div id="landing">
         <div id="poster">
@@ -32,52 +36,60 @@
     </div>
     <!-- intro blurb section -->
     <div id="intro">
-        <p id="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum assumenda minus perferendis
-            voluptatibus labore sint doloribus recusandae rem? Accusamus dicta tempore eligendi neque fuga dolore
-            corrupti eius, expedita tenetur eveniet vitae deserunt? Dignissimos obcaecati necessitatibus at possimus non
-            et quae molestiae vitae doloribus quisquam fugit quos totam veritatis enim officia labore dolorum ipsa cum,
-            asperiores optio, accusantium architecto unde illum. Quaerat odit totam unde vitae voluptatem eaque est
-            voluptatum hic, quam pariatur dolorem sint! Placeat, minus perferendis! Repudiandae, inventore.</p>
-        <div id="phonePic1"></div>
+        <p id="aboutMe">
+            HEY there, I’m an often excited and always smiling creative with his eyes on a career in the digital design world. I’m looking for a full-time 10 week internship in Copenhagen this coming spring, and if you’re here it probably means I really really would like to do that internship at your company!  
+            <br>
+            <br>
+            Since I’ve been learning formal design thinking and skills at Copenhagen School of Design and Technology (KEA), I’ve been endlessly curious about the design process and its often unexpected outcomes.
+            <br><br>I’ve chosen the Front-End Development elective as I feel gaining confidence with in demand hard skills such as HTML, CSS, Javascript, various frameworks such as React and motionOne, and The Adobe Suite, is a the best way to be useful at the start of my career in the digital design sphere.
+            <br><br>
+            See a VERY small selection of my work below:</p>
+
     </div>
     <!-- projects list -->
     <div id="projectList">
-        <div id="project1" class="projectPreview">
-            <h3 class="projectCounter">Project 01</h3>
-            <h3 class="projectName">Gerner Jahncke Branding and Webshop</h3>
-            <div class="projectWindow hidden">
-                <div class="projectDesc">
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum deserunt
-                        voluptatum, distinctio iusto magnam at laboriosam facere! Velit, molestiae?</p>
-                </div>
-                <div class="projectSlides"></div>
+        <a href="index.html">
+            <div class="projectCard" id="card1" title="Click Me">
+                <div class="projectImg" id="img1"></div>
+                <div class="projectImgThumb" id="img1t"></div>
+                <p class="projectTag">Gerner Jahncke <br> Website and Webshop</p>
             </div>
-            <div class="borderRight"></div>
-            <div class="borderBottom"></div>
-        </div>
-        <div id="project2" class="projectPreview">
-            <h3 class="projectCounter">Project 02</h3>
-            <h3 class="projectName">Report: The State of Digital Design</h3>
-            <div class="projectWindow hidden">
-                <div class="projectDesc"></div>
-                <div class="projectSlides"></div>
+        </a>
+        <a target="_blank" href="assets/theStateOfMMD.pdf">
+            <div class="projectCard" id="card2" title="Click Me">
+                <div class="projectImg" id="img2"></div>
+                <div class="projectImgThumb" id="img2t"></div>
+                <p class="projectTag">The state of Design <br>Deep Dive Report</p>
             </div>
-
-            <div class="borderRight"></div>
-            <div class="borderBottom"></div>
-        </div>
-        <div id="project3" class="projectPreview">
-            <h3 class="projectCounter">Project 03</h3>
-            <h3 class="projectName">Dystopian Simulator: Amazon Edition</h3>
-            <div class="projectWindow hidden">
-                <div class="projectDesc"></div>
-                <div class="projectSlides"></div>
+        </a>
+        <a target="_blank" href="http://gareth.dk/Assets/Projects/videogameweb/Index.html">
+            <div class="projectCard" id="card3" title="Click Me">
+                <div class="projectImg" id="img3"></div>
+                <div class="projectImgThumb" id="img3t"></div>
+                <p class="projectTag">Dystopian Sim <br>Vanilla JS Video Game</p>
             </div>
-            <div class="borderRight"></div>
-            <div class="borderBottom"></div>
+        </a>
+        <div class="hidden" id="projectDesc">
+            <p id="projectText"></p>
+            <div id="projectMedia"><video loop src="" autoplay muted id="projectVideo"></video></div>
         </div>
     </div>
-
+    <div id="contact">
+        <div id="phonePic1"></div>
+        <p>If you have would like to contact me regarding an internship position in Copenhagen, or have any advice for
+            life in general, you can contact me at <span>53 82 72 79</span>, or <span>mrgarethddavies@gmail.com</span>
+        </p>
+    </div>
+    <footer>
+        <div class="footItem"><a target="_blank" href="http://gareth.dk/">Detailed Portfolio</a></div>
+        <div class="footItem">
+            <ul>
+                <li><a target="_blank" href="https://www.behance.net/garethdavies18">Behance</a>
+                </li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/gareth-davies-aa583b201/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
     <script type="module" src="main.js"></script>
 </body>
 
