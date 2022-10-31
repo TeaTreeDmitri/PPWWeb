@@ -5,13 +5,13 @@
 
 :root {
   /* colours */
-  --blue: #323f8e; 
+  --blue: #323f8e;
   --white: #fff;
   --black: #000;
   /* --white: #000;
   --black: #fff;
   --blue: #8fc59b; */
-  
+
   /* border */
   --border: solid 3px var(--black);
 
@@ -64,7 +64,6 @@
   cursor: url('assets/pointerBlue.png');
 }
 
-
 body {
   cursor: url('assets/mouseBlue3.png'), auto;
   background-color: var(--white);
@@ -97,7 +96,7 @@ h3 {
   font-family: var(--HeavyFont);
   font-weight: 400;
   line-height: 90%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 p {
@@ -122,7 +121,6 @@ a {
   display: block;
   font-family: var(--HeavyFont);
 }
-
 
 .nav {
   width: 100%;
@@ -160,7 +158,6 @@ a {
   place-content: center;
   z-index: 2;
   background-color: var(--white);
-
 }
 
 #poster {
@@ -178,6 +175,7 @@ a {
 
 #subtitle {
   grid-column: 2 / 3;
+
   margin-top: auto;
 }
 
@@ -263,7 +261,7 @@ a {
   height: 96vh;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50vh 40vh ;
+  grid-template-rows: 50vh 40vh;
   row-gap: 2rem;
   scroll-snap-align: start;
 }
@@ -376,7 +374,6 @@ a {
   max-width: 80%;
 }
 
-
 #img3 {
   background-image: url(/assets/DystopiaThumbTrue.webp);
   background-size: cover;
@@ -408,7 +405,6 @@ a {
   max-width: 70ch;
   text-align: center;
 }
-
 
 /* footer */
 footer {
@@ -447,16 +443,17 @@ footer a {
 @keyframes slowHide {
   from {
     opacity: 1;
-
-  } to {
+  }
+  to {
     opacity: 0;
-  } 
+  }
 }
 
 @keyframes slowShow {
   from {
     opacity: 0;
-  } to {
+  }
+  to {
     opacity: 1;
   }
 }
@@ -465,26 +462,27 @@ footer a {
   from {
     font-size: inherit;
     border: #fff;
-  } to {
+  }
+  to {
     font-size: 1.2rem;
     transform: translateY(30%);
-    border: var(--border)
+    border: var(--border);
   }
 }
 
 @keyframes textSmaller {
-  from{
+  from {
     font-size: 1.2rem;
     transform: translateY(30%);
-    border: var(--border)
-  } to {
+    border: var(--border);
+  }
+  to {
     font-size: inherit;
     border: #fff;
   }
 }
 
 /* responsivity */
-
 
 @media screen and (max-width: 650px) {
   #poster {

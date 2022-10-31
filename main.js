@@ -50,7 +50,9 @@ function mobileFunctionality() {
         projectCards.forEach(button => button.addEventListener("mouseout", closeProjectWindow));
     } else {
         console.log("less than 649")
-       projectCards.forEach(button => button.addEventListener("touchstart", openMobileWindow, {passive: true}));
+        projectCards.forEach(button => button.addEventListener("touchstart", openMobileWindow, {
+            passive: true
+        }));
     }
 }
 
@@ -109,9 +111,5 @@ function closeProjectWindow(event) {
 
     projectTag.classList.add("focusTextBack");
     projectTag.classList.remove("focusText");
-
-}
-
-darkMode() {
 
 }
